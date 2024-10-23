@@ -1,0 +1,74 @@
+{
+    "values":[
+        {
+            "network":"bscTest",
+            "addresses":{
+            },
+            "contracts":{
+            }
+
+        },
+        {
+            "network":"bscMain",
+            "addresses":{
+            },
+            "contracts":{
+            }
+        },
+        {
+            "network":"arbitrumOne",
+            "addresses":{
+            },
+            "contracts":{
+            }
+
+        },
+        {
+            "network":"arbitrumTest",
+            "addresses":{
+                "operater_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "starpool_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "teamincome_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f"
+            },
+            "contracts":{
+            }
+        },
+        {
+            "network":"localhost",
+            "addresses":{
+                "operater_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "starpool_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "teamincome_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f"
+            }
+        },
+        {
+            "network":"hardhat",
+            "addresses":{
+            }
+        }
+    ],
+    "groups":[
+        {
+            "comment":"for test, don't deploy to bscTest,bscMain",
+            "group":"test",
+            "contracts":[
+                {"name":"MockTPO","deployer":"deployer","args":[]}
+            ]
+        },
+        {
+            "group":"Assets",
+            "gen":1,
+            "contracts":[
+                {"name":"P721","deployer":"deployer","args":[]},
+                {"name":"PFreezeable721","deployer":"deployer","args":[]},
+                {"name":"P1155","deployer":"deployer","args":[]},
+                {"name":"PCapped20","deployer":"deployer","args":[]},
+                {"name":"PMintable20","deployer":"deployer","args":[]},
+                {"name":"PioneerSyCoin20","deployer":"deployer","args":["addr:PMintable20"]},
+                {"name":"PioneerToken20","deployer":"deployer","args":["addr:PCapped20"]},
+                {"name":"PioneerSyCoin20Minter","deployer":"deployer","args":["addr:PioneerSyCoin20"]},
+                {"name":"PioneerTokenMinePool","deployer":"deployer","args":["addr:PioneerToken20", "10000000000000000000000"]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "0xpioneer_core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/0xPioneerTeam/0xPioneer_PublicContract.git",
+  "author": "0xpioneer <sean@0xpioneer.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.8",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.17.2",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-deploy": "^0.11.37",
+    "hardhat-ethers": "^1.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
