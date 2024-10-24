@@ -87,7 +87,8 @@
                 {"name":"PioneerSyCoin20","deployer":"deployer","args":["addr:PMintable20"]},
                 {"name":"PioneerToken20","deployer":"deployer","args":["addr:PCapped20"]},
                 {"name":"PioneerSyCoin20Minter","deployer":"deployer","args":["addr:PioneerSyCoin20"]},
-                {"name":"PioneerTokenMinePool","deployer":"deployer","args":["addr:PioneerToken20", "10000000000000000000000"]}
+                {"name":"PioneerTokenMinePool","deployer":"deployer","args":["addr:PioneerToken20", "10000000000000000000000"]},
+                {"name":"PioneerOffOnChainBridge","deployer":"deployer","args":[]}
             ]
         }
     ]

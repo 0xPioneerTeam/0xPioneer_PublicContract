@@ -294,6 +294,43 @@
     "function send(address userAddr, uint256 value, bytes reason)",
     "function supportsInterface(bytes4 interfaceId) view returns (bool)"
    ]
+  },
+  "PioneerOffOnChainBridge": {
+   "deployer": "0xb935B63E7C8152673E5c4E95D26D19189a06794f",
+   "addr": "0xdF5aB6ee82966B40f24433ED434338076c6Fb86e",
+   "abi": [
+    "constructor()",
+    "event Off2OnChain_PIOT(address userAddr, uint256 value)",
+    "event Off2OnChain_PSYC(address userAddr, uint256 value)",
+    "event On2OffChain_PIOT(address userAddr, uint256 value)",
+    "event On2OffChain_PSYC(address userAddr, uint256 value)",
+    "event Paused(address account)",
+    "event RoleAdminChanged(bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole)",
+    "event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender)",
+    "event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender)",
+    "event Unpaused(address account)",
+    "function DEFAULT_ADMIN_ROLE() view returns (bytes32)",
+    "function MANAGER_ROLE() view returns (bytes32)",
+    "function MINTER_ROLE() view returns (bytes32)",
+    "function PAUSER_ROLE() view returns (bytes32)",
+    "function SERVICE_ROLE() view returns (bytes32)",
+    "function _PIOTAddr() view returns (address)",
+    "function _PSYCAddr() view returns (address)",
+    "function getRoleAdmin(bytes32 role) view returns (bytes32)",
+    "function grantRole(bytes32 role, address account)",
+    "function hasRole(bytes32 role, address account) view returns (bool)",
+    "function init(address PSYCAddr, address PIOTAddr)",
+    "function off2onChain_PIOT(address userAddr, uint256 value)",
+    "function off2onChain_PSYC(address userAddr, uint256 value)",
+    "function on2offChain_PIOT(uint256 value)",
+    "function on2offChain_PSYC(uint256 value)",
+    "function pause()",
+    "function paused() view returns (bool)",
+    "function renounceRole(bytes32 role, address account)",
+    "function revokeRole(bytes32 role, address account)",
+    "function supportsInterface(bytes4 interfaceId) view returns (bool)",
+    "function unpause()"
+   ]
   }
  }
 }

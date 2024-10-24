@@ -20,6 +20,10 @@ export class Init_Assets {
         // TO DO : transfer mine token to mine pool 50%?
         await ContractTool.CallState(PioneerToken20, "transfer", ["addr:PioneerTokenMinePool", "50000000000000000000000000000"]);
 
+        // off on chain
+        let PioneerOffOnChainBridge = ContractInfo.getContract("PioneerOffOnChainBridge");
+        await ContractTool.CallState(PioneerOffOnChainBridge, "init", ["addr:PioneerSyCoin20", "addr:PioneerToken20"]);
+
         return true;
     }
 
