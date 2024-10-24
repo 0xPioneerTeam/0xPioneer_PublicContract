@@ -34,6 +34,26 @@
             }
         },
         {
+            "network":"scrollTest",
+            "addresses":{
+                "operater_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "starpool_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",
+                "teamincome_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f"
+            },
+            "contracts":{
+            }
+        },
+        {
+            "network":"scroll",
+            "addresses":{
+                "operater_address":"",
+                "starpool_address":"",
+                "teamincome_address":""
+            },
+            "contracts":{
+            }
+        },
+        {
             "network":"localhost",
             "addresses":{
                 "operater_address":"0xaB2CA69d1FE083A45f78d7198b19D2a133b1d45f",

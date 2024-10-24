@@ -100,6 +100,22 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
       tags: ["staging"],
     },
+    scrollTest: {
+      url: "https://sepolia-rpc.scroll.io",
+      accounts: onlykeys,
+      chainId: 534351,
+      live: true,
+      saveDeployments: true,
+      tags: ["staging"],
+    },
+    scroll: {
+      url: "https://rpc.scroll.io",
+      accounts: onlykeys,
+      chainId: 534352,
+      live: true,
+      saveDeployments: true,
+      tags: ["staging"],
+    },
   },
   mocha: {
     timeout: 600000
