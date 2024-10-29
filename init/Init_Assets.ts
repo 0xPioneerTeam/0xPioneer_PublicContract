@@ -11,7 +11,7 @@ export class Init_Assets {
 
 //======init assets
         let PioneerSyCoin20 = await ContractTool.GetProxyContract("PioneerSyCoin20", "PMintable20");
-        await ContractTool.CallState(PioneerSyCoin20, "initMintable20", ["0xPioneer Sync Coin", "PSYC", 0]);
+        await ContractTool.CallState(PioneerSyCoin20, "initMintable20", ["0xPioneer Psyche Energy", "PSYC", 0]);
         await ContractTool.CallState(PioneerSyCoin20, "setMinter", ["addr:PioneerSyCoin20Minter"]);
 
         let PioneerToken20 = await ContractTool.GetProxyContract("PioneerToken20", "PCapped20");
